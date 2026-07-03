@@ -1,9 +1,9 @@
 name: Gunluk Yemek Botu
 
 on:
-  workflow_dispatch: # Manuel çalıştırma butonunu aktif eder
+  workflow_dispatch: # Manuel çalıştırma butonunu aktif tutar
   schedule:
-    - cron: '0 6 * * *' # Her gün UTC 06:00 (TSİ 09:00)
+    - cron: '0 3 * * *' # Her gün UTC 03:00 (Yoğunluğa göre TSİ 09:00 - 09:15 arası tetiklenir)
 
 jobs:
   run-bot:
